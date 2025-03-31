@@ -1,0 +1,99 @@
+{
+  "id": "31606a11-735e-4d04-a1e1-ea6d0646705e",
+  "version": "2.0",
+  "name": "HW",
+  "url": "https://khodlvm.com.ua/veterinarni-poslugi-naselennyu/",
+  "tests": [{
+    "id": "35eda172-54a4-47c8-8687-b3481fc79db5",
+    "name": "Untitled",
+    "commands": [{
+      "id": "1cfe1926-8c0c-4e10-87df-272c6051c25d",
+      "comment": "",
+      "command": "open",
+      "target": "https://khodlvm.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1064817-68ba-4c8b-9e36-704b6db08454",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ветеринарні послуги населенню",
+      "targets": [
+        ["linkText=Ветеринарні послуги населенню", "linkText"],
+        ["css=#menu-item-147 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ветеринарні послуги населенню')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-147']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://khodlvm.com.ua/veterinarni-poslugi-naselennyu/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ветеринарні послуги населенню')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "142bbbcb-f06e-4c9c-a468-8110fa2ce59d",
+      "comment": "",
+      "command": "type",
+      "target": "name=text",
+      "targets": [
+        ["name=text", "name"],
+        ["css=.wpcf7-form-control-wrap:nth-child(1) > .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='text']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f73-o1']/form/div[2]/p/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "Текст"
+    }, {
+      "id": "b827bd01-bba0-48ee-9077-c4613a471c44",
+      "comment": "",
+      "command": "type",
+      "target": "name=telephone",
+      "targets": [
+        ["name=telephone", "name"],
+        ["css=.wpcf7-form-control-wrap:nth-child(2) > .wpcf7-form-control", "css:finder"],
+        ["xpath=//input[@name='telephone']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f73-o1']/form/div[2]/p/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": "0000000000"
+    }, {
+      "id": "60fd7b0c-f652-42aa-b86f-ede7f8b4822d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wpcf7-submit",
+      "targets": [
+        ["css=.wpcf7-submit", "css:finder"],
+        ["xpath=//input[@value='Звернутися за допомогою']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f73-o1']/form/div[3]/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2897e22-e2a2-484d-826d-19b77f464ae5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.wpcf7-response-output",
+      "targets": [
+        ["css=.wpcf7-response-output", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f73-o1']/form/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": "css=.wpcf7-response-output"
+    }, {
+      "id": "a040a376-4e4d-494a-8e00-0c157621febd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.wpcf7-response-output",
+      "targets": [],
+      "value": "Дякую за Ваше повідомлення. Воно успішно відправлене."
+    }]
+  }],
+  "suites": [{
+    "id": "d76648d6-708a-43ff-871c-6356b3967216",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["35eda172-54a4-47c8-8687-b3481fc79db5"]
+  }],
+  "urls": ["https://khodlvm.com.ua/veterinarni-poslugi-naselennyu/"],
+  "plugins": []
+}
