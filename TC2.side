@@ -1,0 +1,70 @@
+{
+  "id": "1aaef3ea-8152-4891-a725-a74b9d8218c4",
+  "version": "2.0",
+  "name": "ТС2",
+  "url": "https://khodlvm.com.ua/",
+  "tests": [{
+    "id": "7a15f555-5116-4049-8a40-c14b8bd1e7cd",
+    "name": "Untitled",
+    "commands": [{
+      "id": "07063c88-1619-484a-8107-c888b31ff10c",
+      "comment": "",
+      "command": "open",
+      "target": "https://khodlvm.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3532413-c82f-4b13-8abf-cfe0ab2a989a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.head-menu",
+      "targets": [
+        ["css=.head-menu", "css:finder"],
+        ["xpath=//header/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7827477-c7b7-4a59-b18b-81d1fd58a32c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(@href, 'https://khodlvm.com.ua/news/')]",
+      "targets": [
+        ["linkText=Новини", "linkText"],
+        ["css=.left-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://khodlvm.com.ua/news/')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Новини')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39afdd74-9d82-4d12-8539-f52964b869f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=load-more-news",
+      "targets": [
+        ["id=load-more-news", "id"],
+        ["css=#load-more-news", "css:finder"],
+        ["xpath=//button[@id='load-more-news']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4814da49-c127-4ed4-9263-b2d239466b16",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@class='news-item'",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a2a1e6b5-989b-40d8-9671-b6ccc3118958",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7a15f555-5116-4049-8a40-c14b8bd1e7cd"]
+  }],
+  "urls": ["https://khodlvm.com.ua/"],
+  "plugins": []
+}
