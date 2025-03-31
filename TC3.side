@@ -1,0 +1,109 @@
+{
+  "id": "ed210063-b75b-4b30-aa51-7043450228e4",
+  "version": "2.0",
+  "name": "TC3",
+  "url": "https://khodlvm.com.ua/",
+  "tests": [{
+    "id": "807e4880-e724-4ce6-8c77-5f4d140c1fe9",
+    "name": "Untitled",
+    "commands": [{
+      "id": "dab4295d-6e4d-4e02-96e1-cf3d404def4b",
+      "comment": "",
+      "command": "open",
+      "target": "https://khodlvm.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ddb9987-ab0c-48f0-bc15-45368665960d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.head-menu",
+      "targets": [
+        ["css=.head-menu", "css:finder"],
+        ["xpath=//header/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8952255-36cb-4658-afca-c566f1aee1bf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Структурні підрозділи",
+      "targets": [
+        ["linkText=Структурні підрозділи", "linkText"],
+        ["css=.left-item:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://khodlvm.com.ua/divisions/')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Структурні підрозділи')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4afba81-61a1-46db-97b6-00da80cf8893",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(5) > img",
+      "targets": [
+        ["css=a:nth-child(5) > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://khodlvm.com.ua/wp-content/themes/vetclinic/assets/images/swhats1.svg')]", "xpath:img"],
+        ["xpath=//a[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36fa2629-7e14-462c-b2d2-082aad1fc9c6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//img[contains(@src,'https://khodlvm.com.ua/wp-content/themes/vetclinic/assets/images/swhats1.svg')]",
+      "targets": [
+        ["css=a:nth-child(5) > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://khodlvm.com.ua/wp-content/themes/vetclinic/assets/images/swhats1.svg')]", "xpath:img"],
+        ["xpath=//a[5]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f355a3ab-5edc-45fe-a703-dde75ce3f94d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.head-menu",
+      "targets": [
+        ["css=.head-menu", "css:finder"],
+        ["xpath=//header/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0afba9d1-4eaa-48d4-a28e-d80830bc9ab7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ветеринарні послуги населенню",
+      "targets": [
+        ["linkText=Ветеринарні послуги населенню", "linkText"],
+        ["css=#menu-item-147 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ветеринарні послуги населенню')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-147']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://khodlvm.com.ua/veterinarni-poslugi-naselennyu/')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ветеринарні послуги населенню')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dadf41c-1fde-4706-a578-0faed5c96eb4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.title",
+      "targets": [
+        ["css=.title", "css:finder"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Ветеринарні послуги населенню')]", "xpath:innerText"]
+      ],
+      "value": "Ветеринарні послуги населенню"
+    }]
+  }],
+  "suites": [{
+    "id": "bda33ae0-e74d-4bea-9495-d7e2b1609947",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["807e4880-e724-4ce6-8c77-5f4d140c1fe9"]
+  }],
+  "urls": ["https://khodlvm.com.ua/"],
+  "plugins": []
+}
